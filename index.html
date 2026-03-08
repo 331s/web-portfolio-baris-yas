@@ -1,37 +1,185 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title> Sitemizin Başlığı </title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <!--üst alan-->
-    <header>
-      <h1>Baris Y</h1>
-    </header>
-    <!--navbar menüsü-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barış Yaş — Bilgisayar Programcılığı Öğrencisi</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<header>
+  <a href="index.html" class="logo">Barış <span>Yaş</span></a>
+  <div class="header-right">
     <nav>
-      <ul>
-        <li> <a href="index.html"> Ana Sayfa </li>
-        <li> <a href="pages/about.html"> Hakkında </li>
-        <li> <a href="pages/projeler.html"> Projeler </li>
-        <li> <a href="pages/contact.html"> İletişim </li>
-      </ul>
+      <a href="index.html" data-num="01">Ana Sayfa</a>
+      <a href="pages/about.html" data-num="02">Hakkında</a>
+      <a href="pages/projeler.html" data-num="03">Projeler</a>
+      <a href="pages/contact.html" data-num="04">İletişim</a>
     </nav>
-    <!--ana içerik-->
-    <main>
-      <section>
-        <h2> Hoş Geldiniz</h2>
-        <p> Bu benim kişisel portfolyo sitem</p>
-      </section>
-      <section>
-        <h2> Projelerim </h2>
-        <p> Yakında düzenlenecek.</p>
-      </section>
-    </main>
-    <!--alt alan-->
-    <footer>
-      <p> © 2026 Tüm Hakları Saklıdır...</p>
-    </footer>
-  </body>
+    <button class="theme-toggle" aria-label="Tema değiştir">
+      <span class="icon-moon">☽</span>
+      <span class="icon-sun">☀</span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-tag">Bilgisayar Programcılığı Öğrencisi</div>
+
+  <h1 class="hero-title">
+    Kod ile<br><em>Tasarım</em><br>Arasında.
+  </h1>
+
+  <p class="hero-sub">
+    Java, PHP ve JavaScript ile projeler geliştiren bir bilgisayar programcılığı öğrencisiyim.
+  </p>
+
+  <div class="hero-bottom">
+    <div style="display:flex;gap:24px;align-items:center;">
+      <a href="pages/projeler.html" class="hero-cta">
+        <span>Projelere Bak</span>
+        <span>→</span>
+      </a>
+      <a href="pages/contact.html" class="hero-cta" style="background:transparent;color:var(--accent);border:1px solid var(--border);">
+        <span>İletişime Geç</span>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">1+</span>
+        <span class="stat-label">Yıl Deneyim</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Proje</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Teknoloji</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Kaydır</span>
+    </div>
+  </div>
+</section>
+
+<!-- HAKKINDA ÖNIZLEME -->
+<section class="section">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Biraz<br><em>Hakkımda</em></h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal reveal-delay-1">
+      <p>Bilgisayar programcılığı öğrencisiyim. Ders projelerinin dışına çıkarak kendi fikirlerimi hayata geçirmeye çalışıyorum.</p>
+      <p>Java ile plugin geliştirme, PHP/JavaScript ile web uygulamaları üzerine çalışıyorum. Her proje benim için yeni bir öğrenme fırsatı.</p>
+      <div class="skill-pills">
+        <div class="pill"><span>Java</span></div>
+        <div class="pill"><span>PHP</span></div>
+        <div class="pill"><span>JavaScript</span></div>
+        <div class="pill"><span>MySQL</span></div>
+        <div class="pill"><span>HTML/CSS</span></div>
+        <div class="pill"><span>Git</span></div>
+      </div>
+    </div>
+
+    <div class="about-visual reveal reveal-delay-2">
+      <div class="about-visual-initials">BY</div>
+      <div class="about-deco">Bilgisayar Programcılığı · 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJELER ÖNİZLEME -->
+<section class="section" style="padding-top:0;">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Öne Çıkan<br><em>Projeler</em></h2>
+  </div>
+
+  <div class="projects-list">
+    <div class="project-item reveal reveal-delay-1">
+      <span class="project-num">001</span>
+      <div class="project-info">
+        <div class="project-name">CraftingTable Plugin</div>
+        <div class="project-desc">Minecraft Paper sunucuları için /craft komutuyla anında çalışma masası açan Java plugin'i</div>
+      </div>
+      <div class="project-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Paper API</span>
+        <span class="tag">Maven</span>
+      </div>
+    </div>
+    <div class="project-item reveal reveal-delay-2">
+      <span class="project-num">002</span>
+      <div class="project-info">
+        <div class="project-name">Gider Hesaplama</div>
+        <div class="project-desc">Kullanıcı girişi ve kategori yönetimi içeren PHP tabanlı kişisel bütçe takip uygulaması</div>
+      </div>
+      <div class="project-tags">
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="project-item reveal reveal-delay-3">
+      <span class="project-num">003</span>
+      <div class="project-info">
+        <div class="project-name">Portfolyo Sitesi</div>
+        <div class="project-desc">Saf HTML/CSS/JS ile geliştirdiğim, animasyonlu ve responsive kişisel portfolyo</div>
+      </div>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;" class="reveal">
+    <a href="pages/projeler.html" class="hero-cta">
+      <span>Tüm Projeleri Gör</span>
+      <span>→</span>
+    </a>
+  </div>
+</section>
+
+<!-- İLETİŞİM ÇAĞRı -->
+<section class="section" style="background:var(--bg2);padding-top:80px;padding-bottom:80px;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+    <div class="reveal">
+      <div class="hero-tag" style="opacity:1;animation:none;">İletişim</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);font-weight:300;line-height:1.1;color:var(--text);">
+        Benimle<br><em style="font-style:italic;color:var(--accent);">iletişime geç.</em>
+      </h2>
+    </div>
+    <div class="reveal reveal-delay-2" style="text-align:right;">
+      <a href="pages/contact.html" class="hero-cta">
+        <span>İletişime Geç</span>
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 Barış Yaş — Tüm Hakları Saklıdır.</span>
+  <a href="#" class="footer-back" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Başa Dön ↑</a>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
 </html>
