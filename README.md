@@ -1,18 +1,28 @@
-# Portfolyo
+# 🌐 Portfolio
 
 Kişisel portfolyo web sitesi.
 
-## Sayfalar
+---
 
-- `index.html` — Ana sayfa
-- `pages/about.html` — Hakkında
-- `pages/projeler.html` — Projeler
-- `pages/contact.html` — İletişim
+## 📁 Structure
 
-## Kullanım
+- `index.html` — Ana sayfa  
+- `pages/about.html` — Hakkında  
+- `pages/projeler.html` — Projeler  
+- `pages/contact.html` — İletişim  
 
-`index.html` dosyasını tarayıcıda açman yeterli, sunucuya gerek yok.
+---
 
-## Teknolojiler
+## 🚀 Usage
 
-HTML · CSS · JavaScript
+Projeyi çalıştırmak için herhangi bir kurulum gerekmez.
+
+`index.html` dosyasını tarayıcıda açmanız yeterlidir.
+
+---
+
+## 💻 Tech Stack
+
+HTML  
+CSS  
+JavaScript
